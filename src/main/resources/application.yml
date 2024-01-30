@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://metastore:3306/oauth2?&serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: atm
+    password: Atm_123#
+
+  security:
+    user:
+      name: test1
+      password: 123123
+
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    show-sql: false
+
